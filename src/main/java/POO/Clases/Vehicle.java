@@ -1,6 +1,8 @@
 package POO.Clases;
 import lombok.*;
 
+@AllArgsConstructor
+@ToString
 public class Vehicle {
     @Getter @Setter
     private String brand;
@@ -12,12 +14,17 @@ public class Vehicle {
     private String color;
     @Getter @Setter
     private double price;
+    @Getter @Setter
+    private Boolean sport;
+    @Getter @Setter
+    private Integer speed;
+    @Getter @Setter
+    private Motor motor;
 
-    public Vehicle(String brand, String model, int year, String color, double price) {
-        this.brand = brand;
-        this.model = model;
-        this.year = year;
-        this.color = color;
-        this.price = price;
-    }
+public void accelerate(Integer quantity){
+    this.speed += quantity;
+
 }
+
+}
+

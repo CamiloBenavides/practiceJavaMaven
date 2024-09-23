@@ -3,11 +3,12 @@ import lombok.*;
 
 @AllArgsConstructor
 @ToString
+@NoArgsConstructor
 public class Vehicle {
     @Getter @Setter
     private String brand;
     @Getter @Setter
-    private String model;
+    private String modelVehicle;
     @Getter @Setter
     private int year;
     @Getter @Setter

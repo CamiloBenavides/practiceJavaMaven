@@ -13,7 +13,7 @@ public class Vehicle {
     private String color;
     private double price;
     private Boolean sport;
-    private Integer speed;
+    private Integer speed=0;
     private Motor motor;
 
 public void accelerate(Integer quantity){
